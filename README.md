@@ -1,4 +1,4 @@
-# cybertype.app
+# cybertype.app/Arabic 
 
 A Fast and Minimal Typing App.
 
