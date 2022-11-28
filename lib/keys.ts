@@ -27,6 +27,40 @@ export const lowerCaseAlpha = [
   'z'
 ]
 
+export const ArabicLetters = [
+  'ا',
+  'ب',
+  'ت',
+  'ث',
+  'ج',
+  'ح',
+  'خ',
+  'د',
+  'ذ',
+  'ر',
+  'ز',
+  'س',
+  'ش',
+  'ص',
+  'ض',
+  'ط',
+  'ظ',
+  'ع',
+  'غ',
+  'ف',
+  'ق',
+  'ك',
+  'ل',
+  'م',
+  'ن',
+  'ه',
+  'و',
+  'ي',
+  'ؤ',
+  'ئ',
+  'أ'
+]
+
 export const upperCaseAlpha = lowerCaseAlpha.map(e => e.toUpperCase())
 
 export const row1 = ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=']
@@ -45,10 +79,12 @@ export const others = [' ', 'Enter', 'Backspace', 'ArrowLeft', 'ArrowRight']
 
 // heat map is generated for these keys
 export const heatmapKeys = [...lowerCaseAlpha, ...row2, ...row3, ...row4, ' ']
+export const heatmapKeysArabic = [...ArabicLetters, ...row2, ...row3, ...row4, ' ']
 
 // keys that are not in this list are ignored
 const keysToUse = new Set([
   ...lowerCaseAlpha,
+  ...ArabicLetters,
   ...upperCaseAlpha,
   ...row1,
   ...row1Shift,
