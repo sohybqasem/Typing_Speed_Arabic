@@ -41,6 +41,17 @@
   }
 }
 
+// .text {
+//   font-size:3em;
+//   width:300px;
+//   color:white;
+//   background: grey;
+// }
+
+.arabic {
+  direction: rtl;
+}
+
 // fade both top and bottom when typing is started so that if scrolling is not done properly
 // the text is not cut off at the top
 :global(body.typing) .wordsWrapper {

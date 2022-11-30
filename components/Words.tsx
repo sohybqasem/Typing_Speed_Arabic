@@ -13,7 +13,9 @@ type WordsProps = {
 export function Words({ words, progress, errorLocations }: WordsProps) {
   const wordsRef = useRef<HTMLDivElement>(null)
   const shouldScrollRef = useRef(true)
-
+  console.log('words indised words function:', words)
+  console.log('progress:', progress)
+  console.log('error location:', errorLocations)
   // auto infinite scroll
   // set transform on the .words element to keep the active word in view
   useEffect(() => {
@@ -41,16 +43,18 @@ export function Words({ words, progress, errorLocations }: WordsProps) {
     <div className={styles.wordsWrapper}>
       <div className={styles.wordsScroll}>
         <div className={styles.words} ref={wordsRef}>
-          {words.map((word, wordIndex) => (
-            <Word
-              key={wordIndex}
-              word={word}
-              isTyped={progress.wordIndex > wordIndex}
-              isCurrent={progress.wordIndex === wordIndex}
-              activeCharIndex={progress.charIndex}
-              errorsInWord={errorLocations[wordIndex]}
-            />
-          ))}
+          <div className={styles.arabic}>
+            {words.map((word, wordIndex) => (
+              <Word
+                key={wordIndex}
+                word={word}
+                isTyped={progress.wordIndex > wordIndex}
+                isCurrent={progress.wordIndex === wordIndex}
+                activeCharIndex={progress.charIndex}
+                errorsInWord={errorLocations[wordIndex]}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

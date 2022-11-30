@@ -20,11 +20,16 @@ export function useData(dataName: State['dataName'], dispatch: React.Dispatch<Ac
     } else {
       dispatch({ type: 'setFetchingData', data: true })
 
-      console.log(dataName)
-
+      // var fileName;
+      // if (dataName === "العربية"){
+      //   console.log("arabic activated")
+      //  fileName = dataNameToFileName("arabic_10k")
+      // }else{
+      //  fileName = dataNameToFileName(dataName)
+      // }
       const fileName = dataNameToFileName(dataName)
-      console.log(fileName)
-
+      console.log('filename', fileName)
+      //de public\json\arabic_10k.json
       fetch(`/json/${fileName}.json`)
         .then(res => res.json())
         .then(data => {
