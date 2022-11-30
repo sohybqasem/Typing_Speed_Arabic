@@ -189,7 +189,6 @@ function handleIncorrectKeyDown(state: State) {
 function getRandomQuotes(data: QuoteData[], charCount: number) {
   const words: string[] = []
 
-  console.log('this is char count', charCount)
   const wordCount = charCount / 5
 
   while (words.length < wordCount) {

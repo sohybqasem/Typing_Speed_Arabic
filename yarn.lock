@@ -4250,6 +4250,11 @@
   "resolved" "https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz"
   "version" "2.6.2"
 
+"nest@^0.1.6":
+  "integrity" "sha512-21378J/6pHB9EZMId5yz9DaxVj778pCHhzfXhRLLrLWZydpLgbsyxL5B5QyTSWJBk5L8XbiGgMvNZMb/qBySYg=="
+  "resolved" "https://registry.npmjs.org/nest/-/nest-0.1.6.tgz"
+  "version" "0.1.6"
+
 "next-pwa@^5.6.0":
   "integrity" "sha512-XV8g8C6B7UmViXU8askMEYhWwQ4qc/XqJGnexbLV68hzKaGHZDMtHsm2TNxFcbR7+ypVuth/wwpiIlMwpRJJ5A=="
   "resolved" "https://registry.npmjs.org/next-pwa/-/next-pwa-5.6.0.tgz"

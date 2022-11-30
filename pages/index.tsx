@@ -31,6 +31,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       {AppHead}
+
       <DynamicIsland state={state} dispatch={dispatch} />
 
       {/* if there is data to show and no other data is being fetched */}
