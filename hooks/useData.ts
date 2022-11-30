@@ -20,7 +20,10 @@ export function useData(dataName: State['dataName'], dispatch: React.Dispatch<Ac
     } else {
       dispatch({ type: 'setFetchingData', data: true })
 
+      console.log(dataName)
+
       const fileName = dataNameToFileName(dataName)
+      console.log(fileName)
 
       fetch(`/json/${fileName}.json`)
         .then(res => res.json())
