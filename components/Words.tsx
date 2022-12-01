@@ -96,6 +96,8 @@ const Word = memo(function Word({
           })}
         >
           {character === ' ' ? SpaceIcon : character}
+          {/* {character === ' ' ? SpaceIcon : $`&zwj;` } */}
+          &zwj;
         </span>
       ))}
     </div>
