@@ -96,8 +96,14 @@ const Word = memo(function Word({
           })}
         >
           {character === ' ' ? SpaceIcon : character}
+          {characterIndex == word.length - 2 ? '' : <>&zwj;</>}
+
+          {/* {console.log(word.length)}
+          {console.log(characterIndex)} */}
+
           {/* {character === ' ' ? SpaceIcon : $`&zwj;` } */}
-          &zwj;
+
+          {/* &zwj; */}
         </span>
       ))}
     </div>
