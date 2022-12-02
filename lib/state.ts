@@ -202,17 +202,12 @@ function getRandomQuotes(data: QuoteData[], charCount: number) {
 function appendWords(state: State, count = 2) {
   const words = state.words
   if (state.dataName === 'Quotes') {
-    console.log('state words', words)
     state.words = [
       ...words,
       ...getRandomQuotes(state.data as unknown as QuoteData[], count)
     ]
   } else {
-    console.log('number of words', count)
-    console.log('words', words)
-    console.log('data', state.data)
     state.words = [...words, ...getRandomWords(state.data, count)]
-    console.log('random word generated', state.words)
   }
 }
 

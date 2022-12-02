@@ -7,6 +7,7 @@ export function getSpeed(words: number, time: number) {
 
 export function createEmptyKeyStatRecord() {
   const value: KeyStatRecord = {}
+
   heatmapKeys.forEach(key => {
     value[key] = {
       count: 0,
