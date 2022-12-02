@@ -7,9 +7,13 @@ type KeyStatsProps = {
   keyStats: KeyStatRecord
 }
 
-const row1 = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', '[', ']']
-const row2 = ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', ';', `'`]
-const row3 = ['z', 'x', 'c', 'v', 'b', 'n', 'm', ',', '.', '/']
+// const row1 = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', '[', ']']
+// const row2 = ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', ';', `'`]
+// const row3 = ['z', 'x', 'c', 'v', 'b', 'n', 'm', ',', '.', '/']
+
+const row1 = ['ض', 'ص', 'ث', 'ق', 'ف', 'غ', 'ع', 'ه', 'خ', 'ح', 'ج', 'د']
+const row2 = ['ش', 'س', 'ي', 'ب', 'ل', 'ا', 'ت', 'ن', 'م', 'ك', 'ط']
+const row3 = ['ئ', 'ء', 'ؤ', 'ر', 'لا', 'ى', 'ة', 'و', 'ز', 'ظ']
 
 export function KeyStats({ keyStats }: KeyStatsProps) {
   const mapper = (keys: string[]) =>
