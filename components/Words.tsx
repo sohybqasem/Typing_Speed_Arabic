@@ -13,9 +13,6 @@ type WordsProps = {
 export function Words({ words, progress, errorLocations }: WordsProps) {
   const wordsRef = useRef<HTMLDivElement>(null)
   const shouldScrollRef = useRef(true)
-  console.log('words indised words function:', words)
-  console.log('progress:', progress)
-  console.log('error location:', errorLocations)
   // auto infinite scroll
   // set transform on the .words element to keep the active word in view
   useEffect(() => {
