@@ -50,7 +50,8 @@ const Home: NextPage = () => {
       <KeyStats keyStats={state.keyStats} />
 
       <div className={styles.tips}>
-        <kbd>enter</kbd> to reset / change
+        <kbd>Enter</kbd>
+        <h3>للعودة او البدأ من جديد اضغط </h3>
       </div>
 
       <Nav />
@@ -60,7 +61,7 @@ const Home: NextPage = () => {
 
 const AppHead = (
   <Head>
-    <title> cybertype </title>
+    <title> Arabic Speed Typing </title>
     <meta name="theme-color" content="#171212" />
     <meta
       name="description"
@@ -68,7 +69,7 @@ const AppHead = (
     />
     <meta
       name="keywords"
-      content="cybertype, typing app, practice typing, simple typing app, improve typing speed"
+      content="Arabic speed typing, typing app in arabic, practice typing in arabic, simple typing app, improve typing speed"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </Head>

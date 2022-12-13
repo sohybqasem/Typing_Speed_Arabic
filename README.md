@@ -1,10 +1,10 @@
-# cybertype.app
+# ArabicTyping.app
 
 A Fast and Minimal Typing App.
 
-Checkout [cybertype.app](https://cybertype.app/)
+Checkout [ArabicSpeedType.app] ("include website link")
 
-Practice typing in various modes such as common 1k, 5k, 10k English Words, most commonly misspelled words, Quotes or Programming Language keywords for various languages such as JavaScript, HTML, CSS, Rust, Python, C++ etc with Sweet Mechanical Keyboard Sounds.
+Practice typing in Arabic qoutes, poems, articles, songs lyrics.
 
 <br>
 
@@ -53,4 +53,4 @@ It is a Progressive Web app that can be installed and can work 100% offline.
 
 ### Credits for Data Collection
 
-JSON Data for various languages is collected from the amazing [MonkeyType](https://github.com/monkeytypegame/monkeytype) Repository.
+JSON Data for various languages is collected from the amazing [MonkeyType](https://github.com/monkeytypegame/monkeytype) Repository. and CyberType for

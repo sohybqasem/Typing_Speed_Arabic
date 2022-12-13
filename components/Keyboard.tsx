@@ -2,7 +2,7 @@ import styles from '../styles/Keyboard.module.scss'
 import { KeyStatRecord } from '../lib/types'
 import { memo, useEffect, useRef } from 'react'
 import { getSpeed } from '../lib/utils'
-
+import { convertDigitIn } from './Stats'
 type KeyStatsProps = {
   keyStats: KeyStatRecord
 }
@@ -69,8 +69,8 @@ const KeyStat = memo(function KeyStat({ keyName, count, totalTime }: KeyStatProp
       {keySpeed !== 0 && (
         <div className={styles.keyStat}>
           <div className={styles.speed}>
-            {keySpeed}
-            <span className={styles.unit}>WPM</span>
+            <span className={styles.unit}>كلمة بالدقيقة</span>
+            {convertDigitIn(keySpeed.toString())}
           </div>
         </div>
       )}

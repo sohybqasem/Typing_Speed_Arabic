@@ -5,8 +5,10 @@ import { memo } from 'react'
 export const Nav = memo(function Nav() {
   return (
     <nav className={styles.nav}>
-      <div className={styles.appName}>CyberType</div>
-      <a
+      <div className={styles.appName}>
+        <h3>اختبر سرعة الكتابة بالعربي</h3>
+      </div>
+      {/* <a
         href="https://github.com/MananTank/cybertype"
         target="_blank"
         rel="noreferrer"
@@ -14,9 +16,9 @@ export const Nav = memo(function Nav() {
         aria-label="View on Github"
       >
         {GithubIcon}
-      </a>
+      </a> */}
 
-      <a
+      {/* <a
         href="https://twitter.com/MananTank_"
         target="_blank"
         rel="noreferrer"
@@ -24,7 +26,7 @@ export const Nav = memo(function Nav() {
         aria-label="Twitter of the creator"
       >
         {twitterIcon}
-      </a>
+      </a> */}
     </nav>
   )
 })

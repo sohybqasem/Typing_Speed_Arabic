@@ -7,6 +7,20 @@ type StatsProps = {
   charsTyped: number
 }
 
+export function convertDigitIn(enDigit: string) {
+  // PERSIAN, ARABIC, URDO
+  var newValue = ''
+  for (var i = 0; i < enDigit.length; i++) {
+    var ch = enDigit.charCodeAt(i)
+    if (ch >= 48 && ch <= 57) {
+      // european digit range
+      var newChar = ch + 1584
+      newValue = newValue + String.fromCharCode(newChar)
+    } else newValue = newValue + String.fromCharCode(ch)
+  }
+  return newValue
+}
+
 export function Stats(props: StatsProps) {
   const { timeTaken, errors, charsTyped } = props
   const wpmSpeed = getSpeed(charsTyped, timeTaken * 5)
@@ -15,7 +29,7 @@ export function Stats(props: StatsProps) {
 
   return (
     <div className={styles.statsContainer}>
-      <Stat unit="wpm" value={wpmSpeed} />
+      <Stat value={wpmSpeed} unit="كلمة بالدقيقة" />
       <Stat unit="%" value={accuracy} />
     </div>
   )
@@ -32,8 +46,9 @@ function Stat(props: StatProps) {
   return (
     <div className={`${styles.stat} ${className || ''}`}>
       <div className={styles.value}>
-        <span> {value} </span>
-        <span className={styles.unit}>{unit}</span>
+        <span className={styles.unit}> {unit}</span>
+        <span> {convertDigitIn(value.toString())} </span>
+        {/* <span className={styles.unit}>{unit}</span> */}
       </div>
     </div>
   )
